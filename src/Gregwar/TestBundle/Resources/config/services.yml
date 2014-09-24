@@ -1,0 +1,5 @@
+services:
+    gregwar.registration:
+        class: Gregwar\TestBundle\Form\UserType
+        tags:
+            - { name: form.type, alias: gregwar_user_registration }
