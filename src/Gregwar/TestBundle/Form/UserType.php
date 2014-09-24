@@ -10,7 +10,7 @@ class UserType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         // add your custom field
-        $builder->add('captcha', 'captcha');
+        $builder->add('captcha', 'captcha', array('as_url' => true, 'reload' => true));
     }
 
     public function getParent()
